@@ -13,7 +13,7 @@ The rules of the game are simple: one player from the team gives clues to help t
 
 ## Adding Words
 
-To add your own words to the game, click the **Add Word** button on the main menu. This will open a dialog box where you can enter your words, one per line. Click the **Save** button to save your changes and add the new words to the `words.txt` file.
+To add your own words to the game, click the **Add Word** button on the main menu. This will open a dialog box where you can enter your words, one per line. Click the **Save** button to save your changes and add the new words to the database.
 
 ## Words Database
 
