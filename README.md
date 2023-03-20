@@ -9,7 +9,7 @@ To start playing the game, simply click the **Play** button on the main menu. Th
 
 ## Rules
 
-The rules of the game are simple: one player from the team gives clues to help their teammates guess the word. The player cannot use any part of the word in their clues. The team has one minute to guess as many words as they can. The team with the most correct guesses wins.
+The rules of the game are simple: one player from the team gives clues to help their teammates guess the word. The player cannot use any part of the word in their clues. The team has custom defined time to guess as many words as they can. The team with the most correct guesses wins.
 
 ## Adding Words
 
