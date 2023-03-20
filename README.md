@@ -19,4 +19,4 @@ To add your own words to the game, click the **Add Word** button on the main men
 
 The `words.txt` file in the Qt Builder folder contains a list of words that can be used in the game. To add more words to the game, click the  **ADD WORDS** button on the main menu.
 
-Enjoy playing the ALIAS game!
+Enjoy playing the ALIAS game !
