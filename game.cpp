@@ -253,6 +253,7 @@ void Game::on_add_score_clicked()
 
 void Game::on_ok_clicked()
 {
+    bool flag_of_win = true;
     // check if any team achieved to win score
     int win_count;
     QFile file("dur_score.txt");
@@ -265,11 +266,11 @@ void Game::on_ok_clicked()
         win_count = data.toInt();
         file.close();
     }
-    for(const auto el : team_score)
+    for(const auto& el : team_score)
     {
         if (el.second >= win_count){
             QMessageBox::information(this, "CONGRATULATIONS", QString(" The team %1 is WINNER! ").arg(el.first));
-
+            flag_of_win = false;
             delete m_timer;
             delete m_extra_timer;
             delete m_countdownLabel;
@@ -281,5 +282,7 @@ void Game::on_ok_clicked()
             window.exec();
         }
     }
+    if (flag_of_win)
+        score_window->hide();
 }
 
