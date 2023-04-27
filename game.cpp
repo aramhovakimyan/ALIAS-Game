@@ -129,7 +129,7 @@ void Game::filling_words()
     if(file.open(QIODevice::ReadOnly)){
         QString data;
         QTextStream out(&file);
-        srand(time(0));
+        srand(time(nullptr));
         random1 = rand() % total_lines;
         random2 = rand() % total_lines;
         random3 = rand() % total_lines;
@@ -209,7 +209,7 @@ void Game::on_add_score_clicked()
     score_window->setFixedSize(400, 300);
     score_window->setWindowTitle("SCORE");
     QVBoxLayout *layout = new QVBoxLayout(score_window);
-    for (const auto el : team_score){
+    for (const auto& el : team_score){
         QLabel *team_name = new QLabel;
         team_name->setText(el.first + " -> " + QString::number(el.second));
         layout->addWidget(team_name);
@@ -281,8 +281,5 @@ void Game::on_ok_clicked()
             window.exec();
         }
     }
-
-    // hide this window
-    score_window->hide();
 }
 
